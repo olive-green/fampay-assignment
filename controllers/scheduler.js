@@ -9,7 +9,7 @@ module.exports = () => {
   cron.schedule("* * * * *", async () => {
     try {
       let done = false;
-      console.log(secrets.YOUTUBE_API_KEY)
+      // console.log(secrets.YOUTUBE_API_KEY)
       for (const apiKey of secrets.YOUTUBE_API_KEY.split(",")) {
         try {
           if (done) {
